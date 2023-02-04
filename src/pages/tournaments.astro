@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const tournaments = [
+    {
+        "name": "Casino Night",
+        "image": "casinonight",
+    },
+    {
+        "name": "4 Aces Tournament",
+        "image": "4aces",
+    },
+    {
+        "name": "Infinitum Poker Championship",
+        "image": "infinitum",
+    },
+    {
+        "name": "Sunday Casuals",
+        "image": "sunday",
+    },
+    {
+        "name": "Weekend Billion",
+        "image": "weekend",
+    },
+    {
+        "name": "Bounty Night",
+        "image": "bounty",
+    },
+]
+---
+
+<Layout title="Tournaments | Poker Infinity">
+    <div class="mt-[139px] flex flex-col items-center justify-center">
+        <h1 class="font-extrabold text-6xl">Poker Infinitum Tournaments</h1>
+        <p class="text-xl tracking-wide leading-normal mt-8 w-[32%] text-center">
+            Learn about the latest and ongoing tournaments happening on Poker Infinitum.
+        </p>
+        <img src="/img/pokerchips-7.png" alt="dice cards and chips">
+    </div>
+    <div class="w-full bg-[#272727] border border-[#707070] rounded-t-[1.125rem]">
+        <div class="max-w-[85%] mx-auto grid grid-cols-3 gap-y-14 py-16">
+            {
+                tournaments.map(tournament => {
+                    return (
+                        <div class="flex flex-col items-center justify-center">
+                            <div>
+                                <img src={"/img/tournaments/"+tournament.image+".png"} alt={tournament.name} class="rounded-[1.125rem] border border-[#707070]">
+                            </div>
+                            <div class="mt-5">
+                                <h3 class="font-extrabold text-2xl">{tournament.name}</h3>
+                            </div>  
+                        </div>
+                    )
+                })
+            }
+        </div>
+    </div>
+</Layout>

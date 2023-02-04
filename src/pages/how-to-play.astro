@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Game from '../components/Game.astro';
+import { games } from '../utils/games.js';
+---
+
+<Layout title="How To Play | Poker Infinity">
+    <div class="flex items-center justify-center pt-28">
+        <img src="/img/pokerchips-5.png" alt="pokerchips and cards into the air">
+    </div>
+    <div class="flex flex-col items-center justify-center pt-[8.43rem]">
+        <h1 class="font-extrabold text-6xl">Learn how to Play Poker Infinity</h1>
+        <p class="text-xl tracking-wide leading-normal pt-[2.31rem] w-[30%] text-center">
+            Learn the basics of playing poker before entering a lobby or a tournament.
+        </p>
+    </div>
+    <div class="bg-[#272727] border border-[#707070] rounded-[1.125rem] mt-[7.93rem] max-w-[85%] mx-auto">
+        <div class="grid grid-cols-3 gap-y-16 py-[2.25rem]">
+            {
+                games.map((game) => {
+                    return <Game title={game.title} description={game.description} image={"/img/games/"+game.image} alt={game.alt} />
+                })
+            }
+        </div>
+    </div>
+</Layout>
