@@ -6,7 +6,9 @@ module.exports = {
 	theme: {
 		extend: {
             colors: {
-                'poker-darkgray': '#121212',
+                'blue': '#0D6EFD',
+                'gray-dark': '#121212',
+                'gray-light': '#272727',
             },
         },
         fontFamily: {
