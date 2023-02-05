@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Modal from '../components/Modal.jsx';
 ---
 
 <Layout title="Sign Up | Poker Infinity">
@@ -40,12 +41,7 @@ import Layout from '../layouts/Layout.astro';
                     </label>
                     <p class="text-sm ml-4 tracking-wide"><span class="text-[#807E7E]">I Accept</span> Terms & Conditions</p>
                 </div>
-                <button 
-                    type="submit" 
-                    class="px-16 py-3 bg-blue text-white font-semibold tracking-wide rounded outline-none text-[1.125rem] mt-6"
-                >
-                    Sign In
-                </button>
+                <Modal client:idle />
             </form>
 
             <div class="flex mt-6">
