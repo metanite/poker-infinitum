@@ -6,10 +6,27 @@ h1, h2, h3, h4, h5, h6 {
     @apply font-serif;
 }
 
-.button {
+button, .button {
     @apply font-[Montserrat];
 }
 
-p, a {
+p, a, input, label {
     @apply font-sans;
+}
+
+input[type="checkbox"]:checked + label {
+    background-color: #0D6EFD;
+    border-color: #0D6EFD;
+}
+
+input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+}
+
+.max-w-8xl {
+    max-width: 85rem;
+}
+
+.max-w-9xl {
+    max-width: 90rem;
 }
