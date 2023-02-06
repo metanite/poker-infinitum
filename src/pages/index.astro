@@ -7,16 +7,16 @@ import Features from "../components/Features.astro";
 	<main>
         <div class="relative">
             <div class="h-[877px] bg-black">
-                <div class="py-48 bg-[url('/img/header.png')] bg-auto bg-no-repeat bg-center">
+                <div class="py-48 bg-[url('/img/header.png')] bg-top bg-auto bg-no-repeat md:bg-center">
                     <div class="max-w-7xl px-4 mx-auto">
-                        <div class="w-[60%]">
-                            <h1 class="text-[60px] tracking-wide font-extrabold leading-tight ">The Future of <br/> Digital Poker is here!</h1>
-                            <p class="w-[75%] text-xl tracking-wide leading-1  mt-4">
+                        <div class="w-full md:w-[60%] flex flex-col items-center justify-center md:block">
+                            <h1 class="text-center md:text-left text-[2.8125rem] md:text-[60px] tracking-wide font-extrabold leading-tight ">The Future of <br class="hidden md:block"/> Digital Poker is here!</h1>
+                            <p class="text-center md:text-left text-sm md:text-xl w-[90%] md:w-[75%] tracking-wide leading-normal md:leading-1 mt-3.5 md:mt-4">
                                 This app allows you to create and host live poker games with friends and family - 
                                 without the need of physical poker chips or playing cards
                             </p>
                             <button  
-                                class="px-16 py-[18px] bg-blue text-white font-semibold tracking-wide rounded outline-none text-2xl mt-6"
+                                class="px-11 py-3  md:px-16 md:py-[18px] bg-blue text-white font-semibold tracking-wide rounded outline-none text-sm md:text-2xl mt-12 md:mt-6"
                             >   
                                 <a href="/#" class="button">Start Playing</a>
                             </button>
@@ -25,18 +25,18 @@ import Features from "../components/Features.astro";
                     
                 </div>
             </div>
-            <div class="absolute inset-x-0 -bottom-[191px] max-w-7xl mx-auto px-20 py-2 bg-gray-light rounded-[51px]">
+            <div class="absolute inset-x-0 -bottom-[32px] md:-bottom-[191px] max-w-7xl mx-10 md:mx-auto px-5 py-4 md:px-20 md:py-2 bg-gray-light rounded-[1.3125rem] md:rounded-[51px]">
                 <div class="flex justify-between items-center">
                     <div class="flex flex-col grow">
                         <div>
-                            <h1 class=" text-6xl font-extrabold">$40 Free Credits</h1>
+                            <h1 class="text-2xl md:text-6xl font-extrabold">$40 Free Credits</h1>
                         </div>
                         <div>
-                            <p class="text-xl mt-4">Make sure you use these free credits when you register!</p>
+                            <p class="text-sm md:text-xl mt-4">Make sure you use these free credits when you register!</p>
                         </div>
                         <div>
                             <button 
-                                class="px-10 py-[18px] bg-blue text-white font-semibold tracking-wide rounded outline-none text-2xl mt-6"
+                                class="px-[3.1875rem] py-2.5 md:px-10 md:py-[18px] bg-blue text-white font-semibold tracking-wide rounded outline-none text-sm md:text-2xl mt-6"
                             >
                                 <a href="/#" class="button">Claim Now</a>
                             </button>
@@ -48,21 +48,21 @@ import Features from "../components/Features.astro";
                 </div>
             </div>
         </div>
-        <div class="bg-gray-dark pt-[374px] pb-[182px]">
+        <div class="bg-gray-dark pt-[70px] md:pt-[374px] pb-[182px]">
             <Features />
         </div>
 
         <div class="bg-gray-light relative">
-            <img src="/img/pokerchips-3.png" alt="pokerchips and cards 3" class="absolute left-0 -top-[95px]">
-            <img src="/img/pokerchips-4.png" alt="pokerchips and cards 4" class="absolute right-0 -top-[95px]">
+            <img src="/img/pokerchips-3.png" alt="pokerchips and cards 3" class="w-40 md:w-auto absolute -left-[64px] md:left-0 top-[164px] md:-top-[95px]">
+            <img src="/img/pokerchips-4.png" alt="pokerchips and cards 4" class="w-56 md:w-auto absolute -right-[70px] md:right-0 top-[245px] md:-top-[95px]">
             <div class="flex flex-col items-center justify-center py-20">
                 <div>
-                    <h2 class="font-extrabold text-4xl uppercase tracking-wide">Summary of the poker infinity players</h2>
+                    <h2 class="w-[80%] md:w-auto mx-auto text-center md:text-left font-extrabold text-4xl uppercase tracking-wide leading-normal md:leading-1">Summary of the poker infinity players</h2>
                 </div>
                 <div>
-                    <p class="text-xl mt-6 tracking-wide leading-normal">We do our best to stay connected with our users around the world!</p>
+                    <p class="w-[70%] mx-auto md:w-auto text-center md:text-left text-sm md:text-xl mt-6 tracking-wide leading-normal">We do our best to stay connected with our users around the world!</p>
                 </div>
-                <div class="w-2/5 flex justify-between mt-16">
+                <div class="w-2/5 flex flex-col md:flex-row justify-between mt-16">
                     <div class="flex flex-col items-center">
                         <h1 class="text-[89px] text-[#68E1EB] font-bold">1,200</h1>
                         <p class="text-xl">Registered Players</p>

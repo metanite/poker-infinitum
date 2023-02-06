@@ -6,24 +6,31 @@
     class="py-[17px]" 
     aria-label="Global"
 >
-    <div class="max-w-7xl px-4 mx-auto flex items-center justify-between w-full">
+    <div class="max-w-7xl px-10 md:px-4 mx-auto flex items-center justify-between w-full">
         <div class="flex items-center">
-            <img src="/img/logo.png" alt="poker infinity logo" class="mr-[4.375rem]">
+            <img src="/img/logo.png" alt="poker infinity logo" class="lg:mr-8 xl:mr-[4.375rem]">
 
-            <a href="/" rel="noopener noreferrer" class="font-semibold text-sm mr-11">Home</a>
-            <a href="/how-to-play" rel="noopener noreferrer" class="flex items-center font-semibold text-sm mr-11">
-                How To Play
-                <span class="ml-3">
-                    <svg id="Icon_Arrows_Chevron_Down" data-name="Icon/Arrows/Chevron/Down" xmlns="http://www.w3.org/2000/svg" width="8" height="4.444" viewBox="0 0 8 4.444">
-                        <path id="Icon_Color" data-name="Icon Color" d="M3.686.13a.444.444,0,0,1,.672.579l-.043.05L1.073,4,4.314,7.241a.445.445,0,0,1,.043.579l-.043.05a.445.445,0,0,1-.579.043l-.05-.043L.13,4.314a.445.445,0,0,1-.043-.579l.043-.05Z" transform="translate(0 4.444) rotate(-90)" fill="#fff"/>
-                    </svg>                      
-                </span>
-            </a>
-            <a href="/deposits-and-withdrawals" rel="noopene    r noreferrer" class="font-semibold text-sm mr-11">Deposits & Withdrawals</a>
-            <a href="/tournaments" rel="noopener noreferrer" class="font-semibold text-sm mr-11">Tournaments</a>
+            <div class="hidden md:space-x-4 lg:flex xl:space-x-11">
+                <a href="/" rel="noopener noreferrer" class="font-semibold text-sm">Home</a>
+                <a href="/how-to-play" rel="noopener noreferrer" class="flex items-center font-semibold text-sm">
+                    How To Play
+                    <span class="ml-3">
+                        <svg id="Icon_Arrows_Chevron_Down" data-name="Icon/Arrows/Chevron/Down" xmlns="http://www.w3.org/2000/svg" width="8" height="4.444" viewBox="0 0 8 4.444">
+                            <path id="Icon_Color" data-name="Icon Color" d="M3.686.13a.444.444,0,0,1,.672.579l-.043.05L1.073,4,4.314,7.241a.445.445,0,0,1,.043.579l-.043.05a.445.445,0,0,1-.579.043l-.05-.043L.13,4.314a.445.445,0,0,1-.043-.579l.043-.05Z" transform="translate(0 4.444) rotate(-90)" fill="#fff"/>
+                        </svg>                      
+                    </span>
+                </a>
+                <a href="/deposits-and-withdrawals" rel="noopene    r noreferrer" class="font-semibold text-sm">Deposits & Withdrawals</a>
+                <a href="/tournaments" rel="noopener noreferrer" class="font-semibold text-sm">Tournaments</a>
+            </div>
+            <div class="block lg:hidden">
+                <button type="button" id="hamburger-menu">
+
+                </button>
+            </div>
         </div>
 
-        <div class="space-x-4">
+        <div class="hidden lg:flex space-x-4">
             <a href="/login" class="button px-[35px] py-2.5 bg-blue text-base tracking-wide rounded font-semibold">Login</a>
             <a href="/signup" class="button px-[35px] py-2.5 border border-blue text-blue text-base tracking-wide rounded font-semibold">Sign Up</a>
         </div>
