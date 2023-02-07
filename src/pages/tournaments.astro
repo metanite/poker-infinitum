@@ -30,15 +30,19 @@ const tournaments = [
 ---
 
 <Layout title="Tournaments | Poker Infinity">
-    <div class="mt-[139px] flex flex-col items-center justify-center">
-        <h1 class="font-extrabold text-6xl">Poker Infinitum Tournaments</h1>
-        <p class="text-xl tracking-wide leading-normal mt-8 w-[32%] text-center">
-            Learn about the latest and ongoing tournaments happening on Poker Infinitum.
-        </p>
-        <img src="/img/pokerchips-7.png" alt="dice cards and chips">
+    <div class="mt-10 lg:mt-[139px] px-16 lg:px-0 flex flex-col items-center justify-center">
+        <div class="order-2 lg:order-1">
+            <h1 class="font-extrabold text-5xl md:text-6xl text-center">Poker Infinitum Tournaments</h1>
+            <p class="text-xl tracking-wide leading-normal mt-8 w-full lg:w-[70%] mx-auto text-center">
+                Learn about the latest and ongoing tournaments happening on Poker Infinitum.
+            </p>
+        </div>
+        <div class="order-1 lg:order-2">
+            <img src="/img/pokerchips-7.png" alt="dice cards and chips">
+        </div>
     </div>
-    <div class="w-full bg-gray-light border border-[#707070] rounded-t-[1.125rem]">
-        <div class="max-w-8xl mx-auto grid grid-cols-3 gap-y-14 py-16">
+    <div class="w-full bg-gray-light border border-[#707070] rounded-t-[1.125rem] mt-20 lg:mt-0">
+        <div class="max-w-8xl mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-y-14 px-6 sm:px-0 py-16">
             {
                 tournaments.map(tournament => {
                     return (

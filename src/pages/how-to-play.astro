@@ -5,17 +5,17 @@ import { games } from '../utils/games.js';
 ---
 
 <Layout title="How To Play | Poker Infinity">
-    <div class="flex items-center justify-center pt-28">
+    <div class="flex items-center justify-center px-16 md:px-0 pt-10 md:pt-28">
         <img src="/img/pokerchips-5.png" alt="pokerchips and cards into the air">
     </div>
-    <div class="flex flex-col items-center justify-center pt-[8.43rem]">
-        <h1 class="font-extrabold text-6xl">Learn how to Play Poker Infinity</h1>
-        <p class="text-xl tracking-wide leading-normal pt-[2.31rem] w-[30%] text-center">
+    <div class="flex flex-col items-center justify-center px-4 sm:px-16 md:px-0 pt-10 md:pt-[8.43rem]">
+        <h1 class="font-extrabold text-[2.8125rem] md:text-5xl xl:text-6xl text-center md:text-left">Learn how to Play Poker Infinity</h1>
+        <p class="text-sm sm:text-lg md:text-xl tracking-wide leading-relaxed px-4 pt-[2.31rem] lg:w-[30%] text-center">
             Learn the basics of playing poker before entering a lobby or a tournament.
         </p>
     </div>
-    <div class="bg-gray-light border border-[#707070] rounded-[1.125rem] mt-[7.93rem] max-w-8xl mx-auto">
-        <div class="grid grid-cols-3 gap-y-16 py-[2.25rem]">
+    <div class="bg-gray-light border border-[#707070] rounded-[1.125rem] mt-10 md:mt-[7.93rem] sm:w-[85%] md:w-auto max-w-8xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-y-16 px-6 md:px-0 py-[2.25rem]">
             {
                 games.map((game) => {
                     return <Game title={game.title} description={game.description} image={"/img/games/"+game.image} alt={game.alt} />

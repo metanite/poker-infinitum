@@ -2,32 +2,32 @@
 import { PaymentMethods } from "../utils/payments.js";
 ---
 
-<div class="bg-[#5A5A5A] max-w-8xl mx-auto rounded-t-[20px] px-28 py-6">
+<div class="bg-[#5A5A5A] max-w-8xl sm:w-[85%] xl:w-auto mx-auto rounded-t-[20px] px-10 lg:px-28 py-6">
     <div class="flex items-center justify-between">
         <div class="grow">
-            <h3 class="font-extrabold text-xl">Method</h3>
+            <h3 class="font-extrabold text-sm md:text-lg lg:text-xl">Method</h3>
         </div>
         <div class="flex-none w-[25%]">
-            <h3 class="font-extrabold text-xl">Deposit</h3>
+            <h3 class="font-extrabold text-sm md:text-lg lg:text-xl text-center">Deposit</h3>
         </div>
-        <div class="flex-none w-64">
-            <h3 class="font-extrabold text-xl">Withdraw</h3>
+        <div class="flex-none w-[25%] md:w-64">
+            <h3 class="font-extrabold text-sm md:text-lg lg:text-xl text-center">Withdraw</h3>
         </div>
     </div>
 </div>
-<div class="max-w-8xl mx-auto flex flex-col mt-1">
+<div class="sm:w-[85%] xl:w-auto max-w-8xl mx-auto flex flex-col mt-1">
     {
         PaymentMethods.map(payment => {
             return (
-                <div class="flex items-center justify-between odd:bg-[#D9D9D9] even:bg-white px-28 py-3">
+                <div class="flex items-center justify-between odd:bg-[#D9D9D9] even:bg-white px-10 lg:px-28 py-3">
                     <div class="grow">
                         <img src={"/img/payments/"+payment.name+"-logo.png"}>
                     </div>
                     <div class="flex-none w-[25%]">
-                        <img src={"/img/"+(payment.deposit === true ? 'check' : 'x')+".svg"} class="ml-4">
+                        <img src={"/img/"+(payment.deposit === true ? 'check' : 'x')+".svg"} class="mx-auto">
                     </div>
-                    <div class="flex-none w-64">
-                        <img src={"/img/"+(payment.withdraw === true ? 'check' : 'x')+".svg"} class="ml-10">
+                    <div class="flex-none w-[25%] md:w-64">
+                        <img src={"/img/"+(payment.withdraw === true ? 'check' : 'x')+".svg"} class="mx-auto">
                     </div>
                 </div>
             )
