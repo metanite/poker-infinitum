@@ -6,17 +6,18 @@ import Features from "../components/Features.astro";
 <Layout title="Home | Poker Infinity">
 	<main>
         <div class="relative">
-            <div class="h-[877px] bg-black">
-                <div class="py-48 bg-[url('/img/header.png')] bg-top bg-auto bg-no-repeat md:bg-center">
-                    <div class="max-w-7xl px-10 xl:px-4 mx-auto">
-                        <div class="w-full md:w-[60%] flex flex-col items-center justify-center md:block">
-                            <h1 class="text-center md:text-left text-[2.8125rem] md:text-[60px] tracking-wide font-extrabold leading-tight ">The Future of <br class="hidden md:block"/> Digital Poker is here!</h1>
-                            <p class="text-center md:text-left text-sm md:text-xl w-[90%] md:w-[75%] tracking-wide leading-normal md:leading-1 mt-3.5 md:mt-4">
+            <div class="h-[56.25rem] md:h-[80rem] lg:h-[877px] bg-black">
+                <div class="lg:py-48 lg:bg-[url('/img/header.png')] lg:bg-auto bg-no-repeat lg:bg-center">
+                    <div class="max-w-7xl xl:px-4 mx-auto">
+                        <div class="w-full lg:w-[60%] flex flex-col items-center lg:items-start justify-center">
+                            <img src="/img/header-mobile.png" alt="cards, chips and dices" class="block lg:hidden w-full" />
+                            <h1 class="px-8 md:px-10 xl:px-0 mt-10 lg:mt-0 text-center lg:text-left text-[2.8125rem] md:text-[60px] tracking-wide font-extrabold leading-tight ">The Future of <br class="hidden md:block"/> Digital Poker is here!</h1>
+                            <p class="md:px-10 xl:px-0 text-center lg:text-left text-sm md:text-xl w-[90%] lg:w-[75%] tracking-wide leading-normal md:leading-1 mt-3.5 md:mt-4 mx-auto lg:mx-0">
                                 This app allows you to create and host live poker games with friends and family - 
                                 without the need of physical poker chips or playing cards
                             </p>
                             <button  
-                                class="px-11 py-3  md:px-16 md:py-[18px] bg-blue text-white font-semibold tracking-wide rounded outline-none text-sm md:text-2xl mt-12 md:mt-6"
+                                class="lg:ml-12 xl:ml-0 px-11 py-3 md:px-16 md:py-[18px] bg-blue text-white font-semibold tracking-wide rounded outline-none text-sm md:text-2xl mt-12 md:mt-6"
                             >   
                                 <a href="/#" class="button">Start Playing</a>
                             </button>
@@ -25,7 +26,7 @@ import Features from "../components/Features.astro";
                     
                 </div>
             </div>
-            <div class="absolute inset-x-0 -bottom-[32px] md:-bottom-[191px] max-w-7xl mx-6 md:mx-auto px-5 py-4 md:px-20 md:py-2 bg-gray-light rounded-[1.3125rem] md:rounded-[51px]">
+            <div class="absolute inset-x-0 -bottom-[80px] md:-bottom-[191px] max-w-7xl mx-6 md:mx-auto px-5 py-4 md:px-20 md:py-2 bg-gray-light rounded-[1.3125rem] md:rounded-[51px]">
                 <div class="flex justify-between items-center">
                     <div class="flex flex-col grow">
                         <div>
@@ -48,7 +49,7 @@ import Features from "../components/Features.astro";
                 </div>
             </div>
         </div>
-        <div class="bg-gray-dark pt-[70px] md:pt-[374px] pb-[182px]">
+        <div class="bg-gray-dark pt-[140px] md:pt-[374px] pb-[182px]">
             <Features />
         </div>
 
